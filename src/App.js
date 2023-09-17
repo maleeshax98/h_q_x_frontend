@@ -11,8 +11,19 @@ import View from "./pages/view/View";
 import Leaderbaord from "./pages/leaderbaord/Leaderbaord";
 import Profile from "./pages/profile/Profile";
 import About from "./pages/about/About";
+
+import OneSignal from 'react-onesignal';
+
+
 function App() {
   const { user, ais } = useAuthContext()
+   useEffect(() => {
+     const run = async () => {
+        await OneSignal.init({ appId: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'});
+        OneSignal.Slidedown.promptPush();
+     }
+     run()
+   }, [])
   return (
     <div className="App">
       { !ais  && <p>Loading..</p>}
