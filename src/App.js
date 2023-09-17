@@ -19,7 +19,7 @@ function App() {
   const { user, ais } = useAuthContext()
    useEffect(() => {
      const run = async () => {
-        await OneSignal.init({ appId: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'});
+        await OneSignal.init({ appId: 'c07c00f1-6f5c-4f0b-bf4e-6114fb77de76'});
         OneSignal.Slidedown.promptPush();
      }
      run()
