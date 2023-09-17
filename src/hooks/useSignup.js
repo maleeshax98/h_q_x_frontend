@@ -20,6 +20,8 @@ export default function useSignup() {
                 password
             })
 
+            console.log(`${process.env.REACT_APP_BASE_URL}/api/user/signup`)
+
             // console.log(res)
             localStorage.setItem('user', JSON.stringify(res.data))
             dispatch({type: "LOGIN", payload: res.data})
