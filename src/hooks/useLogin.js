@@ -14,7 +14,7 @@ function useLogin() {
 
         try{
             
-            const res = await axios.post(`http://localhost:4000/api/user/login`, {
+            const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/user/login`, {
                 email,
                 password
             })
