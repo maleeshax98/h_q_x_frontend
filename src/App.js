@@ -13,7 +13,7 @@ import Profile from "./pages/profile/Profile";
 import About from "./pages/about/About";
 
 import OneSignal from 'react-onesignal';
-
+import { useEffect } from "react";
 
 function App() {
   const { user, ais } = useAuthContext()
