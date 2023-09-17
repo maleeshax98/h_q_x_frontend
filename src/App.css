@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+body{
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  @apply font-poppins
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Track (the area where the scrollbar is not present) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background color of the track */
 }
 
-.App-link {
-  color: #61dafb;
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Set the background color of the handle */
+  border-radius: 4px; /* Add some rounded corners to the handle */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Change the handle color on hover */
+}
+
+
+.login-input{
+  @apply border-2 border-blue-700 rounded-lg p-[10px] m-[10px] w-[80vw] md:w-[450px] outline-none
+}
+
+button{
+  @apply p-[10px] rounded-lg bg-blue-900 text-center text-white font-semibold mt-[20px]
+}
+
+.error {
+  @apply w-[100%] bg-red-200 text-red-600 font-semibold text-center rounded-full p-[10px] mt-[10px] border-2 border-red-600
+}
+
+.active{
+  @apply text-blue-600
+}
+
+.answer-default{
+  @apply p-[10px] m-[10px] font-semibold shadow-sm border-2 rounded-xl hover:border-blue-700 min-w-[90vw] md:min-w-[350px]
+}
+
+.answer-wrong {
+  @apply p-[10px] m-[10px] font-semibold shadow-sm border-2 rounded-xl border-red-700 bg-red-300 text-red-700 min-w-[90vw] md:min-w-[350px]
+
+}
+
+.answer-correct {
+  @apply p-[10px] m-[10px] font-semibold shadow-sm border-2 rounded-xl border-green-700 bg-green-300 text-green-700 min-w-[90vw] md:min-w-[350px]
+
+}
+
+.active_cato{
+  border-bottom: 2px solid gray;
 }
