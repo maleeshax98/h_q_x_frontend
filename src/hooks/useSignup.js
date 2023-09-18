@@ -14,7 +14,7 @@ export default function useSignup() {
 
         try{
             
-            const res = await axios.post(`http://localhost:4000/api/user/signup`, {
+            const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/user/signup`, {
                 email,
                 userName,
                 password

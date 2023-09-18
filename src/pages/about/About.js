@@ -25,7 +25,7 @@ function About() {
             <center>
                   <img className='w-[150px] rounded-full' src="../img/wihanga.jpg" alt="" />
             </center>
-            <h1 className='text-center font-semibold  mt-[10px]'>Mr.Wihanga Dissanayake</h1>
+            <h1 className='text-center font-semibold  mt-[10px]'>Mr.Wihanga Dissanayake <br /> (Bsc. Computation & management , University of peradeniya) </h1>
             <p className='text-sm text-gray-400'>ඓතිහාසික වටිනාකම් ගවේෂණය</p>
             <h1 className='text-center font-semibold mt-[10px] text-blue-600'>Contact - +94 77 623 6779</h1>
             <button className='bg-green-400'>Join Whatsapp Group</button>
@@ -33,16 +33,15 @@ function About() {
         </div>
 
       <div className='mt-[30px]'>
-        <h1 className="font-bold  text-xl">About Developers</h1>
-        <p>Developed by Xmart Code</p>
+        
         <center>
-          <img className='w-[150px] rounded-full' src="../img/maleesha.jpg" alt="" />
+          {/* <img className='w-[150px] rounded-full' src="../img/maleesha.jpg" alt="" />
         <h1 className='text-center font-semibold  mt-[10px]'>Maleesha Nayanashan</h1>
-        <p className='max-w-[450px] text-center mt-[10px] text-gray-500 text-sm'>  I'm Maleesha, and Mr.Wihanga Dissanayake is simply the best history teacher ever. His history expertise is unmatched, and his life advice is priceless. Learning from him is a beautiful journey.</p>
+        <p className='max-w-[450px] text-center mt-[10px] text-gray-500 text-sm'>  I'm Maleesha, and Mr.Wihanga Dissanayake is simply the best history teacher ever. His history expertise is unmatched, and his life advice is priceless. Learning from him is a beautiful journey.</p> */}
         
         <div className='mt-[80px]'>
         <img className='w-[100px] rounded-full' src="../img/xmart.jpg" alt="" />
-         <p>This website and app is developed by Xmart Code</p>
+         <p>Developed by Xmart Code</p>
         </div>
         </center>
       

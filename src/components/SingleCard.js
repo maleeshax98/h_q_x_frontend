@@ -21,9 +21,7 @@ function SingleCard({ q, date }) {
             <div className='mt-[10px]'>
                 <h1 className='font-semibold text-lg'>{q}</h1>
             </div>
-            <div>
-                <p>Answers - 48</p>
-            </div>     
+            
         </div>
     )
 }

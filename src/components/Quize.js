@@ -33,7 +33,7 @@ function Quize({ q, answers, correct, docId, won, faild}) {
                     <h1 className='font-semibold text-lg m-[10px]'>{q}</h1>
                 </div>
                 <div>
-                    <p className=' m-[10px]'>Answers - 48</p>
+                    <p className=' m-[10px]'>Choose Correct Answer</p>
                 </div> 
                 <div>
                     { !won && !faild && !selected && (
