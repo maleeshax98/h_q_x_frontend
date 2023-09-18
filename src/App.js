@@ -11,6 +11,9 @@ import View from "./pages/view/View";
 import Leaderbaord from "./pages/leaderbaord/Leaderbaord";
 import Profile from "./pages/profile/Profile";
 import About from "./pages/about/About";
+
+
+
 function App() {
   const { user, ais } = useAuthContext()
   return (
