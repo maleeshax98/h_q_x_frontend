@@ -13,12 +13,12 @@ function Login() {
     }
 
     return (
-        <div>
+        <div className='mb-[150px]'>
             <form onSubmit={handleSubmit} className='  flex items-center justify-center flex-wrap mt-[10vh]'>
                 <div className=''>
                     <center>
                         <h1 className='font-semibold text-3xl text-blue-950'>History Quizer X</h1>
-                        <p className='text-sm md:text-md text-gray-600'>Where you can improve your history knowladge</p>
+                        <p className='text-sm md:text-md text-gray-600 font-bold'>ඓතිහාසික වටිනාකම් ගවේෂණය</p>
                         <img className='w-[150px] md:w-[20%] mb-[50px] mt-[20px] rounded-full' src="./img/logo.jpg" alt="" />
                     </center>
                 </div>

@@ -2,6 +2,7 @@ import "./App.css"
 import BottomNavBar  from "./components/BottomNavBar ";
 import useAuthContext from "./hooks/useAuthContext";
 import Add from "./pages/Admin/Add/Add";
+import AddPost from "./pages/Admin/Add/AddPost";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
@@ -33,6 +34,7 @@ function App() {
               <Route path="/signup" element={ !user ? <Signup /> : <Navigate to={"/home"} /> } />
               <Route path="/login" element={!user ? <Login /> : <Navigate to={"/home"} /> } />
               <Route path={process.env.REACT_APP_ADMIN_URL} element={!user ? <Navigate to={"/home"} /> : <Add /> } />
+              <Route path={process.env.REACT_APP_ADMIN_POST_URL} element={!user ? <Navigate to={"/home"} /> : <AddPost /> } />
             </Routes>
           </BrowserRouter>
         </>

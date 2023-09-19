@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import useGetSingleData from '../../hooks/useGetSingleData';
 import Quize from '../../components/Quize';
 const test = ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1","1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1","1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1","1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1","1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]
 function View() {
     let { id } = useParams();
     const { error, data, isPending, won, faild, wonNames, faildNames } = useGetSingleData(id)
-    // console.log(data)
     const [ show, setShow ] = useState("Won")   
+    const navigate = useNavigate()
+    if(error){
+        navigate("/")
+    }
+
     return (
         <div>
             <div className='flex flex-wrap gap-4 p-[10px] justify-around items-center mb-[10px]'>

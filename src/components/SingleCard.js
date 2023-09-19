@@ -14,7 +14,9 @@ function SingleCard({ q, date }) {
         <div className='border-2 max-w-[450px] min-w-[90vw] md:min-w-[450px] m-[10px] rounded-lg p-[20px] cursor-pointer hover:border-blue-600'>
             <div className=''>
                 <div className='flex gap-4 items-center'>
-                    <img src="./icons/q.svg"  className='w-[30px]' alt="" />
+                    <div   className='w-[30px] overflow-hidden'>
+                        <img src="./img/logo2.png" className=' overflow-hidden object-cover w-full h-full' alt="" />
+                    </div>
                     <p className='text-sm'>{formattedDate}</p>
                 </div>
             </div> 

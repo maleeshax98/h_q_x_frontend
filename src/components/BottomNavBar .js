@@ -7,8 +7,8 @@ import useLogout from '../hooks/useLogout';
 const BottomNavBar = () => {
   const { logout } = useLogout()
   return (
-    <nav className="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2">
-      <div className="container  flex justify-around items-center mt-[20px]">
+    <nav className="fixed z-50 w-full p-[10px] max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2">
+      <div className="container  flex justify-around items-center">
         
           <NavLink to={"/home"} className=' text-gray-600 hover:text-blue-600'>
           <FontAwesomeIcon icon={faHome} className='text-[1.25rem]'  />
